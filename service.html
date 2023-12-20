@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background: url('./service1.jpg') no-repeat center center fixed;
+            background-size: cover;
+
+        }
+
+        header {
+            background-color: #4f85c7;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: whitesmoke;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .service {
+            margin-bottom: 2em;
+        }
+
+        button {
+            background-color: #0250c5;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Services</h1>
+    </header>
+
+    <section>
+        <div class="service">
+            <h2>Enterprise Website Assistant</h2>
+            <p>
+                Enhance your online presence with our Enterprise Website Assistant. We provide intelligent solutions to optimize and manage your enterprise website efficiently.
+            </p>
+            <ul>
+                <li>Automated Content Updates</li>
+                <li>User Engagement Analytics</li>
+                <li>Chatbot Integration for Customer Support</li>
+                <li>SEO Optimization</li>
+            </ul>
+            <button onclick="exploreService('website_assistant')">Explore Service</button>
+        </div>
+
+        <div class="service">
+            <h2>Enterprise Data Exploration Platform</h2>
+            <p>
+                Explore and analyze your enterprise data with our powerful data exploration platform. Gain valuable insights and make informed decisions for your business.
+            </p>
+            <ul>
+                <li>Data Visualization</li>
+                <li>Data Querying and Filtering</li>
+                <li>Data Export for Analysis</li>
+            </ul>
+            <button onclick="exploreService('dataExploration')">Explore Service</button>
+        </div>
+    </section>
+
+    <script>
+        function exploreService(service) {
+            if (service === 'website_assistant') {
+                alert('Redirecting to the Enterprise Website Assistant service...');
+                window.location.href = 'website_assistant.html';
+            } else if (service === 'dataExploration') {
+                alert('Redirecting to the Enterprise Data Exploration Platform...');
+                window.location.href = 'data_exploration_platform.html';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
